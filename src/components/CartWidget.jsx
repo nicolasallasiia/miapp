@@ -4,7 +4,7 @@ const CartWidget = () => {
   return (
     <div style={styles.cartWidget}>
       <span role="img" aria-label="cart">🛒</span>
-      <span style={styles.cartCount}>0</span>
+      <span style={styles.cartCount}>0</span> {/* Puedes cambiar el número dinámicamente */}
     </div>
   );
 };
@@ -13,8 +13,6 @@ const styles = {
   cartWidget: {
     display: 'flex',
     alignItems: 'center',
-    marginLeft: 'auto',
-    padding: '0 20px',
     cursor: 'pointer',
   },
   cartCount: {
